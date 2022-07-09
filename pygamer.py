@@ -1,8 +1,6 @@
 import pygame, sys, time, random
 
-# THANKS FOR WATHING, WHAT KIND OF GAMES U WANT TO SEE NEXT TIME? PLEASE STATE IT IN THE COMMENTS
 
-# CHEERSS
 
 
 speed = 15
@@ -25,7 +23,7 @@ else:
 pygame.display.set_caption("Snake Game")
 game_window = pygame.display.set_mode((frame_size_x, frame_size_y))
 
-# colors
+# cor 
 black = pygame.Color(0,0,0)
 white = pygame.Color(255,255,255)
 red = pygame.Color(255,0,0)
@@ -34,7 +32,6 @@ blue = pygame.Color(0,0,255)
 
 
 fps_controller = pygame.time.Clock()
-# one snake square size
 square_size = 60
 
 def init_vars():
@@ -61,7 +58,7 @@ def show_score(choice, color, font, size):
     game_window.blit(score_surface, score_rect)
     
 
-#game loop
+#lop no gamer
 
 while True:
     for event in pygame.event.get():
@@ -124,7 +121,7 @@ while True:
     pygame.draw.rect(game_window,red, pygame.Rect(food_pos[0], 
                     food_pos[1], square_size, square_size))
     
-    # game over condiditons
+    # game over condições!
 
     for block in snake_body[1:]:
         if head_pos[0] == block[0] and head_pos[1] == block[1]:
